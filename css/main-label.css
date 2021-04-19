@@ -1,0 +1,9 @@
+.main-label {
+    color: var(--color-first);
+    text-align: center;
+    display: block;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    font-size: 20px; 
+    margin-bottom: 15px;
+}

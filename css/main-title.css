@@ -1,0 +1,9 @@
+.main-title {
+    color: var(--color-first);
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto Slab', serif;
+    border: none; 
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

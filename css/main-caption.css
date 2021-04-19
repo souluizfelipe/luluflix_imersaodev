@@ -1,0 +1,6 @@
+.main-caption {
+    color: var(--color-first);
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
