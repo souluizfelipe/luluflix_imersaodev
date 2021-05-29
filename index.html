@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <link rel="shortcut icon" href="#">
+
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +27,8 @@
         <h1 class="main-title">LuluFlix</h1>
         <label class="main-label" for="url">Adicione os filmes que você já assistiu</label>
         <input class="main-input -name" type="text" name="url" id="url" placeholder="Nome do filme">
-        <input class="main-input -poster" type="text" name="url" id="url" placeholder="URL da Imagem">
-        <button class="main-button" type="submit">Adicionar</button>
+        <input class="main-input -banner" type="text" name="url" id="url" placeholder="URL da Imagem">
+        <button class="main-button" type="submit" onclick="displayMovie.submitContent()">Adicionar</button>
         <section class="list-banners">
             <!-- <figure class="wrapper-banner">
                 <img class="main-banner" src="img/banner1.jpg" alt="banner of the movie">
@@ -33,7 +36,7 @@
             </figure>    -->
         </section>
         <footer class="main-footer">
-            <a class="logo" href="https://www.alura.com.br/promocao/marcobrunodev">
+            <a class="logo" href="https://www.alura.com.br/promocao/marcobrunodev" target="_blank">
                 <img src="img/logoAlura.jpg" alt="logo alura" class="logoAlura"> 
             </a>
             <h3 class="title">#imersaoDev</h3>
