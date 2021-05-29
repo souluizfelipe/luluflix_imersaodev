@@ -27,13 +27,13 @@
         <h1 class="main-title">LuluFlix</h1>
         <label class="main-label" for="url">Adicione os filmes que você já assistiu</label>
         <input class="main-input -name" type="text" name="url" id="url" placeholder="Nome do filme">
-        <input class="main-input -banner" type="text" name="url" id="url" placeholder="URL da Imagem">
-        <button class="main-button" type="submit" onclick="displayMovie.submitContent()">Adicionar</button>
+        <input class="main-input -banner" type="text" name="url" id="url" placeholder="URL do banner do filme - IMDB">
+        <button class="main-button" type="submit" onclick="displayMovie.submitContent(displayMovie.movieBannerRaw.value, displayMovie.movieNameRaw.value)">Adicionar</button>
         <section class="list-banners">
-            <!-- <figure class="wrapper-banner">
-                <img class="main-banner" src="img/banner1.jpg" alt="banner of the movie">
-                <figcaption class="main-caption">Nome do filme</figcaption>
-            </figure>    -->
+            <figure class="wrapper-banner">
+                <img class="main-banner" lang="en" src="https://m.media-amazon.com/images/M/MV5BNjE4ODEwNzktYjg5Yi00N2YxLWExMmEtMmQyZTBiYWI4MGQwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_UX182_CR0,0,182,268_AL_.jpg" alt="Da 5 Bloods banner">
+                <figcaption class="main-caption" lang="en">Da 5 Bloods</figcaption>
+            </figure>   
         </section>
         <footer class="main-footer">
             <a class="logo" href="https://www.alura.com.br/promocao/marcobrunodev" target="_blank">
