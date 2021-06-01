@@ -1,9 +1,14 @@
-const moviesList = [];
+const movieList = [];
 
 const displayMovie = {
     movieNameRaw: document.querySelector('.main-input.-name'),
     movieBannerRaw: document.querySelector('.main-input.-banner'),
 
+    add(movie) {
+        displayMovie.all.push(movie);
+        app.reload();
+    },
+    
     inputContentName() {
         return displayMovie.movieNameRaw.value;
     },
@@ -29,19 +34,19 @@ const displayMovie = {
         
         figure.insertAdjacentElement('beforeend', img);
         figure.insertAdjacentElement('beforeend', figcaption);
-        listBanners.insertAdjacentElement('beforeend', figure);
+        listBanners.insertAdjacentElement('beforeend', figure); 
         
-        moviesList.push()
+        movieList.push();
     },
     
     submitContent(url, nome) {
-            if(url.endsWith('.jpg') && nome.length > 0) {
-                displayMovie.addMovie();
-                utils.clearInput(); 
-            } else {
-                return alert('Preencha o nome do filme ou insara a URL de uma imagem .jpg')
-            };
-        } 
+        if(url.endsWith('.jpg') && nome.length > 0) {
+            displayMovie.addMovie();
+            utils.clearInput(); 
+        } else {
+            return alert('Preencha o nome do filme ou insara a URL de uma imagem .jpg')
+        };
+    },
 };
 
 const utils = {
@@ -50,5 +55,4 @@ const utils = {
         displayMovie.movieNameRaw.value = '';
         displayMovie.movieBannerRaw.value = '';
     },
-}
-
+};
